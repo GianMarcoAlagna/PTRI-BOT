@@ -39,7 +39,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
-//* Construct and prepare an instance of the REST module
 client.on("ready", async () => {
   colorize.green(`Logged in as ${client.user.tag}`);
   //* Load and deploy commands
