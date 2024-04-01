@@ -103,10 +103,15 @@ client.on("ready", async () => {
   }
 });
 
-try {
-  await client.login(TOKEN);
-  colorize.green("Successfully logged in with the provided token.");
-} catch (error) {
-  colorize.red("Failed to login with the provided token.");
-  process.exit(1);
+async function init() {
+  try {
+    await client.login(TOKEN);
+    colorize.green("Successfully logged in with the provided token.");
+  } catch (error) {
+    colorize.red("Failed to login with the provided token." + TOKEN);
+    colorize.red(error);
+    process.exit(1);
+  }
 }
+
+init();
