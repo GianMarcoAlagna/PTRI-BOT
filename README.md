@@ -6,7 +6,7 @@
 
 ### HIGH:
 
-      - [ ] Have the bot give roles based on reactions to a message
+      - [x] Have the bot give roles based on reactions to a message
       - [ ] Create a command to ban a user
       - [ ] Create a command to kick a user
 
